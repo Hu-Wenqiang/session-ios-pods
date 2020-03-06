@@ -1514,6 +1514,11 @@
 		C380926143D609433202A7937F2E7502 /* TSGroupThread.m in Sources */ = {isa = PBXBuildFile; fileRef = CA51D22F889D900B62A901241336CCCA /* TSGroupThread.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C38D75882385E6E10047AF0B /* LKUnlinkDeviceMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C38D75892385E6E10047AF0B /* LKUnlinkDeviceMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */; };
+		C3A48B6B2411F1D500E7E971 /* YapDatabaseConnection+Threading.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A48B6A2411F1D500E7E971 /* YapDatabaseConnection+Threading.m */; };
+		C3A48B6E2411F21500E7E971 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A48B6D2411F21500E7E971 /* Storage.swift */; };
+		C3A48B702411F23600E7E971 /* OWSPrimaryStorage+Threading.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A48B6F2411F23600E7E971 /* OWSPrimaryStorage+Threading.m */; };
+		C3A48B722411F29500E7E971 /* YapDatabaseConnection+Threading.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A48B6C2411F1E400E7E971 /* YapDatabaseConnection+Threading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A48B732411F29F00E7E971 /* OWSPrimaryStorage+Threading.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A48B712411F24A00E7E971 /* OWSPrimaryStorage+Threading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3BADCE123E6380900B304DE /* LokiFileServerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BADCE023E6380900B304DE /* LokiFileServerProxy.swift */; };
 		C43CF814A60E4CEB7F14A24231188C11 /* SignedPrekeyRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A87B989657BF344031280E8B9295F3C /* SignedPrekeyRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4454B4D47C68B5474C1325145C7B9FE /* OWSAttachmentDownloads.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AD0300C14BF0876A5CB5C4F88D6DD3 /* OWSAttachmentDownloads.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4643,6 +4648,11 @@
 		C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUnlinkDeviceMessage.m; sourceTree = "<group>"; };
 		C392555180DEC38836CA183AC9D5B7EB /* MPTakeoverNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPTakeoverNotification.h; path = Mixpanel/MPTakeoverNotification.h; sourceTree = "<group>"; };
 		C3A2127511F52A3C2A5AF8A8E763C81E /* LKEphemeralMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LKEphemeralMessage.m; sourceTree = "<group>"; };
+		C3A48B6A2411F1D500E7E971 /* YapDatabaseConnection+Threading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YapDatabaseConnection+Threading.m"; sourceTree = "<group>"; };
+		C3A48B6C2411F1E400E7E971 /* YapDatabaseConnection+Threading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YapDatabaseConnection+Threading.h"; sourceTree = "<group>"; };
+		C3A48B6D2411F21500E7E971 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		C3A48B6F2411F23600E7E971 /* OWSPrimaryStorage+Threading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OWSPrimaryStorage+Threading.m"; sourceTree = "<group>"; };
+		C3A48B712411F24A00E7E971 /* OWSPrimaryStorage+Threading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OWSPrimaryStorage+Threading.h"; sourceTree = "<group>"; };
 		C3BADCE023E6380900B304DE /* LokiFileServerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiFileServerProxy.swift; sourceTree = "<group>"; };
 		C3C685BEAACC9CA9712EB060669F8049 /* Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E517E8372532438CE9978ACDF4E103 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
@@ -8228,6 +8238,11 @@
 				2CE4EF549F4DA9C3E7B4A76913C6C6B4 /* OWSPrimaryStorage+Loki.h */,
 				83EEB7ADA8AE57E0C5BC66A44D733B61 /* OWSPrimaryStorage+Loki.m */,
 				1619E7AFB3D5987F998D3EE5077C5D90 /* OWSPrimaryStorage+Loki.swift */,
+				C3A48B712411F24A00E7E971 /* OWSPrimaryStorage+Threading.h */,
+				C3A48B6F2411F23600E7E971 /* OWSPrimaryStorage+Threading.m */,
+				C3A48B6D2411F21500E7E971 /* Storage.swift */,
+				C3A48B6C2411F1E400E7E971 /* YapDatabaseConnection+Threading.h */,
+				C3A48B6A2411F1D500E7E971 /* YapDatabaseConnection+Threading.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -9341,6 +9356,7 @@
 				7659F8C178314E556C776E373D966190 /* ContactsUpdater.h in Headers */,
 				A236DA1C7ADFE656E8F884FBFBB6F450 /* DataSource.h in Headers */,
 				EA81F58431386D2CCA47C13C07476CC0 /* FunctionalUtil.h in Headers */,
+				C3A48B722411F29500E7E971 /* YapDatabaseConnection+Threading.h in Headers */,
 				F69CB46B5176252EC0D4BCD7C4A03D1C /* LKAddressMessage.h in Headers */,
 				C8DA0DD97B420B8E96A3D040D2920306 /* LKDeviceLinkMessage.h in Headers */,
 				49C388F13023FC015BFA1CBE54BD96FD /* LKEphemeralMessage.h in Headers */,
@@ -9451,6 +9467,7 @@
 				7C4EBE72E88376FCF1F1E2CFA65D06B5 /* OWSSyncContactsMessage.h in Headers */,
 				D986B12DB0C809E952D61DBEF9603CFB /* OWSSyncGroupsMessage.h in Headers */,
 				1F17BD0C006749EA46717C2A121EB0A7 /* OWSSyncGroupsRequestMessage.h in Headers */,
+				C3A48B732411F29F00E7E971 /* OWSPrimaryStorage+Threading.h in Headers */,
 				C2DB42203DE6BF04B7EA68371209A4DE /* OWSSyncManagerProtocol.h in Headers */,
 				C9FD808AE571F525CD9BB3D2DC48CFEF /* OWSUnknownContactBlockOfferMessage.h in Headers */,
 				76CF8EE294BF2AC8E1659E329D5079FA /* OWSUploadOperation.h in Headers */,
@@ -11465,6 +11482,7 @@
 				B8BFFF372355339800102A27 /* LokiPublicChatInfo.swift in Sources */,
 				2F06060928BB4B568FF606B27928E37D /* NSData+Image.m in Sources */,
 				5FB300EC5041E8F0EF2D2AC2197BCF86 /* NSError+MessageSending.m in Sources */,
+				C3A48B6B2411F1D500E7E971 /* YapDatabaseConnection+Threading.m in Sources */,
 				E82A2F726269C767CC8DB2CC00106B37 /* NSNotificationCenter+OWS.m in Sources */,
 				809905843236A7E3543BFFD0F6A51117 /* NSObject+Casting.m in Sources */,
 				4336F01AED689AC97E80BCF92FE1F36E /* NSRegularExpression+SSK.swift in Sources */,
@@ -11551,6 +11569,7 @@
 				74BB7743FEED15A6BF9E7170CEE5BC85 /* OWSPrimaryStorage+Loki.m in Sources */,
 				B88847C423E2A66C009836D2 /* LKSessionRequestMessage.m in Sources */,
 				8407481CF5AADD3BB74FD69F648A8B05 /* OWSPrimaryStorage+Loki.swift in Sources */,
+				C3A48B6E2411F21500E7E971 /* Storage.swift in Sources */,
 				7A4AF9958CE5DEE0890B293E798DB530 /* OWSPrimaryStorage+PreKeyStore.m in Sources */,
 				BF0F4FEAA4E302C5D7207224073D2628 /* OWSPrimaryStorage+SessionStore.m in Sources */,
 				FE60614C99F09BDE33B04F4D4E45C7D8 /* OWSPrimaryStorage+SignedPreKeyStore.m in Sources */,
@@ -11634,6 +11653,7 @@
 				14A9CED698B5B974D2BB0A721CEFCB57 /* TSAttachmentPointer.m in Sources */,
 				46B080F2C046925EC91DF87A4F5E0A1A /* TSAttachmentStream.m in Sources */,
 				5A9F1BE9C0AA3182E568CCC48AC430AE /* TSCall.m in Sources */,
+				C3A48B702411F23600E7E971 /* OWSPrimaryStorage+Threading.m in Sources */,
 				CA59E2FF779D49CD9D9E25E8663E5B00 /* TSConstants.m in Sources */,
 				EB7EF9487D3DD81BC5561A2055A22C04 /* TSContactThread.m in Sources */,
 				08678F9DB71F6536BD2F1B82044C5285 /* TSDatabaseSecondaryIndexes.m in Sources */,

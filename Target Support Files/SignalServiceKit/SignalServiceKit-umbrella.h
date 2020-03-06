@@ -184,6 +184,8 @@
 #import "OWSSyncManagerProtocol.h"
 #import "SSKAsserts.h"
 #import "UIImage+OWS.h"
+#import "OWSPrimaryStorage+Threading.h"
+#import "YapDatabaseConnection+Threading.h"
 
 FOUNDATION_EXPORT double SignalServiceKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char SignalServiceKitVersionString[];
